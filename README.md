@@ -9,4 +9,17 @@
 ### 1. 추가된 사항
 
 - react-hooks를 도입해 다른 방식으로 코딩 하는 것
--
+
+### 2. 컴포넌트
+
+- [ ] App 컴포넌트
+- [ ] header 컴포넌트
+- [ ] GlobalStyle 컴포넌트
+- [ ] Loader 컴포넌트
+- [ ] Router 컴포넌트
+
+### 3. Routes
+
+- [ ] Home
+- [ ] TV
+- [ ] Search

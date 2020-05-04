@@ -8,12 +8,19 @@ const Header = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 3rem;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 2.5rem;
   background-color: rgba(20, 20, 20, 0.8);
   box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8);
+`;
+
+const Logo = styled.div`
+  width: 8rem;
+  height: 3rem;
+  margin-right: 2.5rem;
+  background-color: red;
 `;
 
 const List = styled.ul`
@@ -21,16 +28,12 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  width: 80px;
-  height: 50px;
+  padding: 0 0.8rem;
   text-align: center;
-  border-bottom: 5px solid
-    ${(props) => (props.current ? "#3498db" : "transparent")};
-  transition: border-bottom 0.5s ease-in-out;
 `;
 
 const SLink = styled(Link)`
-  height: 50px;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,12 +41,16 @@ const SLink = styled(Link)`
 
 export default withRouter(({ location: { pathname } }) => (
   <Header>
+    <Logo />
     <List>
       <Item current={pathname === "/"}>
-        <SLink to="/">Home</SLink>
+        <SLink to="/">홈</SLink>
       </Item>
       <Item current={pathname === "/tv"}>
-        <SLink to="/tv">TV</SLink>
+        <SLink to="/tv">TV 프로그램</SLink>
+      </Item>
+      <Item current={pathname === "/movie"}>
+        <SLink to="/movie">영화</SLink>
       </Item>
     </List>
   </Header>

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "../Routes/Home";
 import TV from "../Routes/TV";
+import Movie from "../Routes/Movie";
 import Header from "./Header";
 
 export default () => (
@@ -16,6 +17,7 @@ export default () => (
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/tv" component={TV} />
+        <Route path="/movie" component={Movie} />
         <Redirect from="*" to="/" />
       </Switch>
     </>

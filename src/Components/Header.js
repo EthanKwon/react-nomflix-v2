@@ -2,13 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { withRouter, Link } from "react-router-dom";
 
+const HEADER_HEIGHT = `3.5rem`;
+
 const Header = styled.header`
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 3rem;
+  height: ${HEADER_HEIGHT};
   display: flex;
   align-items: center;
   padding: 0 2.5rem;
@@ -18,7 +20,7 @@ const Header = styled.header`
 
 const Logo = styled.div`
   width: 8rem;
-  height: 3rem;
+  height: ${HEADER_HEIGHT};
   margin-right: 2.5rem;
   background-color: red;
 `;
@@ -33,7 +35,7 @@ const Item = styled.li`
 `;
 
 const SLink = styled(Link)`
-  height: 3rem;
+  height: ${HEADER_HEIGHT};
   display: flex;
   justify-content: center;
   align-items: center;

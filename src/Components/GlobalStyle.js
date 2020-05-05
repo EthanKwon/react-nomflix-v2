@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Noto Sans KR', sans-serif;
         background-color: rgba(20, 20, 20, 1);
         color : #fff;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
     }
 `;
 

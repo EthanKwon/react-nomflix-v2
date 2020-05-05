@@ -43,8 +43,8 @@ const SLink = styled(Link)`
 
 export default withRouter(({ location: { pathname } }) => (
   <Header>
-    <Logo />
     <List>
+      <Logo />
       <Item current={pathname === "/"}>
         <SLink to="/">홈</SLink>
       </Item>

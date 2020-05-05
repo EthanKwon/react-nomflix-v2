@@ -22,4 +22,29 @@
 
 - [ ] Home
 - [ ] TV
+- [ ] Movie
 - [ ] Search
+
+### 4. API
+
+1. Movie
+
+   - [x] nowPlaying
+   - [x] latest
+   - [x] upcoming
+   - [x] popular
+   - [x] detail
+   - [x] search
+
+2. TV
+
+   - [x] onTheAir
+   - [x] latest
+   - [x] airingToday
+   - [x] popular
+   - [x] detail
+   - [x] search
+
+3. Person
+
+   - [x] search

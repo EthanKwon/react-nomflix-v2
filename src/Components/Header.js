@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { withRouter, Link } from "react-router-dom";
+import Search from "./Search";
 
 const HEADER_HEIGHT = `3.5rem`;
 
@@ -12,6 +13,7 @@ const Header = styled.header`
   width: 100%;
   height: ${HEADER_HEIGHT};
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 2.5rem;
   background-color: rgba(20, 20, 20, 0.8);
@@ -55,5 +57,6 @@ export default withRouter(({ location: { pathname } }) => (
         <SLink to="/movie">영화</SLink>
       </Item>
     </List>
+    <Search />
   </Header>
 ));

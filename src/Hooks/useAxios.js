@@ -18,7 +18,7 @@ const useAxios = (opts, axiosInstance = defaultAxios) => {
         setState({ ...state, loading: false, error });
       });
     });
-  });
+  }, []);
 
   if (!opts.url) {
     return;

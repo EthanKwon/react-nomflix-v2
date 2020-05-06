@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html{
-        font-size : 16px;
+        font-size : 14px;
     }
 
     body {
@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     input {
         all: unset;
     }
-    
+
     a{
         text-decoration:none;
         color : inherit;

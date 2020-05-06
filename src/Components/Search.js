@@ -16,17 +16,19 @@ const Input = styled.input`
   border-bottom: 2px solid white;
 `;
 
-const handleSubmit = (event, ...props) => {
-  event.preventDefault();
-  console.log(props);
+const Search = ({ history }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    history.push("/search");
+  };
+
+  return (
+    <Container>
+      <Form onSubmit={handleSubmit} history={history}>
+        <Input placeholder="🔍SEARCH"></Input>
+      </Form>
+    </Container>
+  );
 };
 
-const Search = (history) => (
-  <Container>
-    <Form onSubmit={handleSubmit} history={history}>
-      <Input placeholder="🔍SEARCH"></Input>
-    </Form>
-  </Container>
-);
-
-export default withRouter(({ history }) => Search(history));
+export default withRouter(Search);
